@@ -1,0 +1,115 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Box Container */
+.box {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  width: 330px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Input Row */
+.inputRow {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+#taskInput:focus {
+  border-color: #4caf50;
+}
+
+#addBtn {
+  padding: 10px 15px;
+  margin-left: 8px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#addBtn:hover {
+  background: #388e3c;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#taskList li {
+  background: #f9f9f9;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+#taskList li:hover {
+  background: #e8f5e9;
+}
+
+/* Checkbox + Task Text */
+#taskList li input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#taskList li span {
+  flex: 1;
+  font-size: 15px;
+}
+
+/* Completed Task */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Remove Button */
+.remove {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.remove:hover {
+  background: #c62828;
+}
